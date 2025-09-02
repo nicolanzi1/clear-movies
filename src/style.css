@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import "tailwindcss";
+
+@theme {
+
+  /* Clear Business Color palette */
+  /* Primary color */
+  --color-primary-50: #fcf7ff;
+  --color-primary-100: #f3daff;
+  --color-primary-200: #e9bdff;
+  --color-primary-300: #dfa0ff;
+  --color-primary-400: #d683ff;
+  --color-primary-500: #cc66ff;
+  --color-primary-600: #ad57d9;
+  --color-primary-700: #8f47b3;
+  --color-primary-800: #70388c;
+  --color-primary-900: #522966;
+  
+  /* Blue color */
+  --color-blue-50: #f5f9ff;
+  --color-blue-100: #cde4fe;
+  --color-blue-200: #a5cffd;
+  --color-blue-300: #7dbafc;
+  --color-blue-400: #56a5fb;
+  --color-blue-500: #2e90fa;
+  --color-blue-600: #277ad5;
+  --color-blue-700: #2065af;
+  --color-blue-800: #194f8a;
+  --color-blue-900: #123a64;
+
+  /* Green */
+  --color-green-50: #f3fbf7;
+  --color-green-100: #c7edda;
+  --color-green-200: #9bdebc;
+  --color-green-300: #6fd09f;
+  --color-green-400: #42c181;
+  --color-green-500: #16b364;
+  --color-green-600: #139855;
+  --color-green-700: #0f7d46;
+  --color-green-800: #0c6237;
+  --color-green-900: #094828;
+
+  /* Yellow */
+  --color-yellow-50: #fefbf3;
+  --color-yellow-100: #faebc4;
+  --color-yellow-200: #f6da95;
+  --color-yellow-300: #f2ca66;
+  --color-yellow-400: #eeba37;
+  --color-yellow-500: #eaaa08;
+  --color-yellow-600: #c79107;
+  --color-yellow-700: #a47706;
+  --color-yellow-800: #815e04;
+  --color-yellow-900: #5e4403;
+  
+  /* Cyyan */
+  --color-cyan-50: #f3fbfd;
+  --color-cyan-100: #c3ecf5;
+  --color-cyan-200: #94dced;
+  --color-cyan-300: #65cde4;
+  --color-cyan-400: #35bddc;
+  --color-cyan-500: #06aed4;
+  --color-cyan-600: #0594b4;
+  --color-cyan-700: #047a94;
+  --color-cyan-800: #036075;
+  --color-cyan-900: #024655;
+
+  /* Pink */
+  --pink-50: #fef6fc;
+  --pink-100: #fbd3ef;
+  --pink-200: #f8afe2;
+  --pink-300: #f48cd5;
+  --pink-400: #f169c9;
+  --pink-500: #ee46bc;
+  --pink-600: #ca3ca0;
+  --pink-700: #a73184;
+  --pink-800: #832767;
+  --pink-900: #5f1c4b;
+
+  /* Indigo */
+  --color-indigo-50: #f7f8fe;
+  --color-indigo-100: #d9ddfc;
+  --color-indigo-200: #bbc2fa;
+  --color-indigo-300: #9da8f8;
+  --color-indigo-400: #7f8df5;
+  --color-indigo-500: #6172f3;
+  --color-indigo-600: #5261cf;
+  --color-indigo-700: #4450aa;
+  --color-indigo-800: #353f86;
+  --color-indigo-900: #272e61;
+
+  /* Teal */
+  --color-teal-50: #f3fbfa;
+  --color-teal-100: #c7eee8;
+  --color-teal-200: #9ae0d5;
+  --color-teal-300: #6ed2c3;
+  --color-teal-400: #41c5b0;
+  --color-teal-500: #15b79e;
+  --color-teal-600: #129c86;
+  --color-teal-700: #0f806f;
+  --color-teal-800: #0c6557;
+  --color-teal-900: #08493f;
+
+  /* Orange */
+  --color-orange-50: #fef7f4;
+  --color-orange-100: #fbdbc9;
+  --color-orange-200: #f8be9f;
+  --color-orange-300: #f5a175;
+  --color-orange-400: #f2854a;
+  --color-orange-500: #ef6820;
+  --color-orange-600: #cb581b;
+  --color-orange-700: #a74916;
+  --color-orange-800: #833912;
+  --color-orange-900: #602a0d;
+
+  /* Bluegray */
+  --color-bluegray-50: #f6f7fb;
+  --color-bluegray-100: #d5d8ea;
+  --color-bluegray-200: #b3b8d9;
+  --color-bluegray-300: #9199c8;
+  --color-bluegray-400: #707ab7;
+  --color-bluegray-500: #4e5ba6;
+  --color-bluegray-600: #424d8d;
+  --color-bluegray-700: #374074;
+  --color-bluegray-800: #2b325b;
+  --color-bluegray-900: #1f2442;
+
+  /* Purple */
+  --color-purple-50: #f8f7ff;
+  --color-purple-100: #dfd7fd;
+  --color-purple-200: #c6b8fc;
+  --color-purple-300: #ad99fb;
+  --color-purple-400: #9379f9;
+  --color-purple-500: #7a5af8;
+  --color-purple-600: #684dd3;
+  --color-purple-700: #553fae;
+  --color-purple-800: #433288;
+  --color-purple-900: #312463;
+
+  /* Red */
+  --color-red-50: #fef6f5;
+  --color-red-100: #fbd2cf;
+  --color-red-200: #f9afa9;
+  --color-red-300: #f68b84;
+  --color-red-400: #f3685e;
+  --color-red-500: #f04438;
+  --color-red-600: #cc3a30;
+  --color-red-700: #a83027;
+  --color-red-800: #84251f;
+  --color-red-900: #601b16;
+}
+
+* {
+  font-family: "Nunito", sans-serif;
+}
