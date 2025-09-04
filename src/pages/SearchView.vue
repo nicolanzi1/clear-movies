@@ -17,7 +17,7 @@
                 No results for "{{ movies.query }}"
             </StateMessage>
 
-            <div v-else class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4 xl:gap-6">
+            <div v-else class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-5">
                 <MovieCard
                     v-for="m in movies.results"
                     :key="m.imdbID"

@@ -4,7 +4,7 @@
     <div class="bg-primary-500">
       <header class="mx-auto max-w-6xl px-4 py-6 text-white">
         <router-link to="/" @click="resetSearch" class="inline-flex items-center gap-2">
-          <h1 class="text-2xl font-semibold tracking-tight">Clear Movies</h1>
+          <h1 class="text-4xl font-semibold tracking-tight">Clear <span class="text-black">Movies</span></h1>
         </router-link>
         <p class="mt-1 text-sm/relaxed text-white/85">Find films fast. Clean, simple and installabale.</p>
       </header>
